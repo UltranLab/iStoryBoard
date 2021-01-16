@@ -23,7 +23,7 @@ public extension UIViewController {
     }
     
     /**
-     UIViewController Extension Function which initializes the current ViewController and returns with a new object.
+     UIViewController Extension Function which initializes the current ViewController and returns a new object. This method uses thread checking and closure. Returns the response always on main thread.
      
      You must provide the ViewController ID same as the ViewController Class Name inside the
      Storyboard -> Select the ViewController -> Identity Inspector -> Storyboard ID.
@@ -38,5 +38,20 @@ public extension UIViewController {
         storyBoard.getInstantiatedVC(with: self) { (response) in
             onCompletion(response)
         }
+    }
+    /**
+     UIViewController Extension Function which initializes the current ViewController and returns new object. This method does not uses thread checking and closure.
+     
+     You must provide the ViewController ID same as the ViewController Class Name inside the
+     Storyboard -> Select the ViewController -> Identity Inspector -> Storyboard ID.
+     
+     - parameter storyBoard: StoryBoards 'iStoryBoardName' Type. Pass any valid storyboard names here as parameter.
+     */
+    static func instantiate(withName storyBoard: IStoryBoardName) -> UIViewController {
+        guard !storyBoard.isEmpty else {
+            IStoryBoard.shared.debugLog(withData: IStoryBoardMessages.storyBoardEmpty)
+            fatalError()
+        }
+        return storyBoard.getInstantiatedVC(with: self)
     }
 }
