@@ -69,6 +69,7 @@ Pod::Spec.new do |s|
 #
     s.source_files = "iStoryBoard"
     s.source_files = "iStoryBoard/**/*.{swift}"
+    s.exclude_files = "iStoryBoard/**/*.{plist}"
 
 # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
