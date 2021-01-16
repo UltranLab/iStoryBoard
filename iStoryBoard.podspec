@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 #  summary should be tweet-length, and the description more in depth.
 #
     s.name         = "iStoryBoard"
-    s.version      = "4.0"
+    s.version      = "1.0"
     s.summary      = "An intelligent way to manage your StoryBoards and ViewControllers."
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
     s.description  = "iStoryBoard is an intelligent system which can help developers to organise and initiate viewcontrollers with very small or minimum amount of code which ensures better, clean, easily maitainable code and reduce the hassel of writting multiple lines of boilerplate code."
-    s.homepage     = "https://github.com/BMGNetworks/iStoryBoard"
+    s.homepage     = "https://github.com/UltranLab/iStoryBoard"
 
 # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
@@ -51,14 +51,14 @@ Pod::Spec.new do |s|
 #  If this Pod runs only on iOS or OS X, then specify the platform and
 #  the deployment target. You can optionally include the target after the platform.
 #
-    s.platform     = :ios, "10.0"
+    s.platform     = :ios, "9.0"
 
 # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
 #  Specify the location from where the source should be retrieved.
 #  Supports git, hg, bzr, svn and HTTP.
 #
-    s.source       = { :git => "https://github.com/BMGNetworks/iStoryBoard.git", :tag => s.version }
+    s.source       = { :git => "https://github.com/UltranLab/iStoryBoard.git", :tag => s.version }
 
 # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
