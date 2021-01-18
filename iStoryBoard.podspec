@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 #  summary should be tweet-length, and the description more in depth.
 #
     s.name         = "iStoryBoard"
-    s.version      = "1.0"
+    s.version      = "1.1"
     s.summary      = "An intelligent way to manage your StoryBoards and ViewControllers."
 
 # This description is used to generate tags and improve search results.
@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
 #  profile URL.
 #
     s.author             = { "Tuhin S" => "icrunchcoder@gmail.com" }
-    s.social_media_url   = "http://twitter.com/TuhinS"
+    s.social_media_url   = "https://twitter.com/rippertms"
 
 # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
@@ -69,6 +69,7 @@ Pod::Spec.new do |s|
 #
     s.source_files = "iStoryBoard"
     s.source_files = "iStoryBoard/**/*.{swift}"
+    s.exclude_files = "iStoryBoard/**/*.{plist}"
 
 # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
